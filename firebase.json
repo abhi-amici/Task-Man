@@ -15,11 +15,6 @@
         "source": "**",
         "destination": "/index.html"
       }
-    ],
-    "run": [ {
-      "cmd": "npm install && export",
-      "env": "API_KEY=\"${secret:GEMINI_API_KEY}\"",
-      "dir": "."
-    } ]
+    ]
   }
 }
