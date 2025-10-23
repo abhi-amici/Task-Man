@@ -1,0 +1,7 @@
+{
+  "name": "amiciKart Task Manager",
+  "description": "An interactive web application for managing and delegating tasks within a company. It provides role-based access for employees, managers, and admins to track task progress, manage teams, and enhance productivity.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

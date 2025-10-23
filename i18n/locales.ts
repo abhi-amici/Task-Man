@@ -1,0 +1,130 @@
+export const translations = {
+  // Sidebar
+  sidebar: {
+    dashboard: { en: 'Dashboard', hi: 'डैशबोर्ड' },
+    myTasks: { en: 'My Tasks', hi: 'मेरे कार्य' },
+    teamTasks: { en: 'Team Tasks', hi: 'टीम के कार्य' },
+    adminPanel: { en: 'Admin Panel', hi: 'एडमिन पैनल' },
+  },
+  // Header
+  header: {
+    switchUser: { en: 'Switch User (Demo)', hi: 'उपयोगकर्ता बदलें (डेमो)' },
+    english: { en: 'English', hi: 'अंग्रेज़ी' },
+    hindi: { en: 'Hindi', hi: 'हिंदी' },
+  },
+  // Dashboard
+  dashboard: {
+    welcome: { en: 'Welcome back', hi: 'वापस स्वागत है' },
+    summary: { en: 'Here\'s a summary of your tasks and activities.', hi: 'यहां आपके कार्यों और गतिविधियों का सारांश है।' },
+    totalTasks: { en: 'Total Tasks', hi: 'कुल कार्य' },
+    toDo: { en: 'To Do', hi: 'करने के लिए' },
+    inProgress: { en: 'In Progress', hi: 'प्रगति में' },
+    completed: { en: 'Completed', hi: 'पूरा हो गया' },
+    teamOverview: { en: 'Team Overview', hi: 'टीम का अवलोकन' },
+    myDashboard: { en: 'My Dashboard', hi: 'मेरा डैशबोर्ड' },
+    upcomingDeadlines: { en: 'Upcoming Deadlines', hi: 'आगामी समय-सीमा' },
+    daysLeft: { en: 'd left', hi: 'दिन शेष' },
+    overdue: { en: 'Overdue', hi: 'अतिदेय' },
+    assignedTo: { en: 'Assigned to', hi: 'को सौंपा गया' },
+    recentlyActive: { en: 'Recently Active Tasks', hi: 'हाल ही में सक्रिय कार्य' },
+  },
+  // My Tasks
+  myTasks: {
+    title: { en: 'My Tasks', hi: 'मेरे कार्य' },
+    description: { en: 'All tasks on your plate, assigned or self-created.', hi: 'आपके सभी कार्य, सौंपे गए या स्वयं बनाए गए।' },
+    createTask: { en: 'Create Task', hi: 'कार्य बनाएं' },
+    assignedToMe: { en: 'Assigned to Me', hi: 'मुझे सौंपे गए' },
+    myPersonalTasks: { en: 'My Personal Tasks', hi: 'मेरे व्यक्तिगत कार्य' },
+    emptyList: { en: 'No one has assigned any tasks to you yet.', hi: 'अभी तक किसी ने आपको कोई कार्य नहीं सौंपा है।' },
+    noPersonalTasks: { en: 'You have no personal tasks.', hi: 'आपके कोई व्यक्तिगत कार्य नहीं हैं।' },
+    getStarted: { en: 'Click "Create Task" to get started.', hi: 'शुरू करने के लिए "कार्य बनाएं" पर क्लिक करें।' },
+    delegatedByMe: { en: 'Delegated by Me', hi: 'मेरे द्वारा सौंपे गए' },
+    notDelegated: { en: 'You haven\'t delegated any tasks.', hi: 'आपने कोई कार्य नहीं सौंपा है।' },
+  },
+  // Team Tasks
+  teamTasks: {
+    title: { en: 'Team Tasks', hi: 'टीम के कार्य' },
+    description: { en: 'Monitor progress and task distribution across your team.', hi: 'अपनी टीम में प्रगति और कार्य वितरण की निगरानी करें।' },
+    delegateTask: { en: 'Delegate Task', hi: 'कार्य सौंपें' },
+    teamMember: { en: 'Team Member:', hi: 'टीम सदस्य:' },
+    allMembers: { en: 'All Members', hi: 'सभी सदस्य' },
+    status: { en: 'Status:', hi: 'स्थिति:' },
+    all: { en: 'All', hi: 'सभी' },
+    noTasksMatch: { en: 'No tasks match your filters.', hi: 'कोई भी कार्य आपके फ़िल्टर से मेल नहीं खाता।' },
+    tryDifferentFilters: { en: 'Try selecting a different team member or status.', hi: 'किसी भिन्न टीम सदस्य या स्थिति का चयन करने का प्रयास करें।' },
+  },
+  // Admin Panel
+  adminPanel: {
+    title: { en: 'Admin Panel', hi: 'एडमिन पैनल' },
+    description: { en: 'Manage users, roles, and system settings.', hi: 'उपयोगकर्ताओं, भूमिकाओं और सिस्टम सेटिंग्स का प्रबंधन करें।' },
+    userManagement: { en: 'User Management', hi: 'उपयोगकर्ता प्रबंधन' },
+    name: { en: 'Name', hi: 'नाम' },
+    role: { en: 'Role', hi: 'भूमिका' },
+    manager: { en: 'Manager', hi: 'प्रबंधक' },
+  },
+  // Task Card
+  taskCard: {
+    dueIn: { en: 'Due in', hi: 'देय' },
+    days: { en: 'days', hi: 'दिन' },
+    by: { en: 'by', hi: 'द्वारा' },
+  },
+  // Task Details Modal
+  taskDetails: {
+    description: { en: 'Description', hi: 'विवरण' },
+    assigner: { en: 'Assigner', hi: 'सौंपने वाला' },
+    assignee: { en: 'Assignee', hi: 'सौंपा गया' },
+    startDate: { en: 'Start Date', hi: 'आरंभ तिथि' },
+    finishDate: { en: 'Finish Date', hi: 'समाप्ति तिथि' },
+    status: { en: 'Status', hi: 'स्थिति' },
+    priority: { en: 'Priority', hi: 'प्राथमिकता' },
+    progress: { en: 'Progress', hi: 'प्रगति' },
+    runningRemarks: { en: 'Running Remarks', hi: 'चल रही टिप्पणियाँ' },
+    addRemark: { en: 'Add Remark', hi: 'टिप्पणी जोड़ें' },
+    discardTask: { en: 'Discard Task', hi: 'कार्य खारिज करें' },
+    deleteTask: { en: 'Delete Task', hi: 'कार्य हटाएं' },
+    requestDeletion: { en: 'Request Deletion', hi: 'हटाने का अनुरोध करें' },
+    cancel: { en: 'Cancel', hi: 'रद्द करें' },
+    saveChanges: { en: 'Save Changes', hi: 'बदलाव सहेजें' },
+    viewInHindi: { en: 'View in Hindi', hi: 'हिंदी में देखें' },
+    viewInEnglish: { en: 'View in English', hi: 'अंग्रेजी में देखें' },
+  },
+   // Create Task Modal
+   createTask: {
+    title: { en: 'Create New Task', hi: 'नया कार्य बनाएं' },
+    taskTitle: { en: 'Title', hi: 'शीर्षक' },
+    description: { en: 'Description', hi: 'विवरण' },
+    assignTo: { en: 'Assign To', hi: 'को सौंपें' },
+    priority: { en: 'Priority', hi: 'प्राथमिकता' },
+    startDate: { en: 'Start Date', hi: 'आरंभ तिथि' },
+    finishDate: { en: 'Finish Date', hi: 'समाप्ति तिथि' },
+    createTaskBtn: { en: 'Create Task', hi: 'कार्य बनाएं' },
+    fillAllFields: { en: 'Please fill out all fields.', hi: 'कृपया सभी फ़ील्ड भरें।' },
+    dateError: { en: 'Finish date must be on or after the start date.', hi: 'समाप्ति तिथि आरंभ तिथि पर या उसके बाद होनी चाहिए।' },
+    createError: { en: 'Failed to create task. Please try again.', hi: 'कार्य बनाने में विफल। कृपया पुन: प्रयास करें।' },
+  },
+  // Confirmation Modal
+  confirmation: {
+    deleteTitle: { en: 'Delete Task', hi: 'कार्य हटाएं' },
+    deleteMessage: { en: 'Are you sure you want to delete this task? This action is not reversible.', hi: 'क्या आप वाकई इस कार्य को हटाना चाहते हैं? यह कार्रवाई पूर्ववत नहीं की जा सकती है।' },
+    deleteConfirm: { en: 'Delete', hi: 'हटाएं' },
+    requestTitle: { en: 'Request Task Deletion', hi: 'कार्य हटाने का अनुरोध करें' },
+    requestMessage: { en: 'This will send a request to the assigner to delete this task. Are you sure you want to proceed?', hi: 'यह इस कार्य को हटाने के लिए सौंपने वाले को एक अनुरोध भेजेगा। क्या आप वाकई आगे बढ़ना चाहते हैं?' },
+    requestConfirm: { en: 'Request Deletion', hi: 'हटाने का अनुरोध करें' },
+    discardTitle: { en: 'Discard Task', hi: 'कार्य खारिज करें' },
+    discardMessage: { en: 'Are you sure you want to discard this task? It will be marked as discarded but remain in the system for history.', hi: 'क्या आप वाकई इस कार्य को खारिज करना चाहते हैं? इसे खारिज के रूप में चिह्नित किया जाएगा लेकिन इतिहास के लिए सिस्टम में बना रहेगा।' },
+    discardConfirm: { en: 'Discard', hi: 'खारिज करें' },
+    cancel: { en: 'Cancel', hi: 'रद्द करें' },
+  },
+  // Enums
+  taskStatus: {
+    'To Do': { en: 'To Do', hi: 'करने के लिए' },
+    'In Progress': { en: 'In Progress', hi: 'प्रगति में' },
+    'Completed': { en: 'Completed', hi: 'पूरा हो गया' },
+    'Discarded': { en: 'Discarded', hi: 'खारिज' },
+  },
+  taskPriority: {
+    'Low': { en: 'Low', hi: 'कम' },
+    'Medium': { en: 'Medium', hi: 'मध्यम' },
+    'High': { en: 'High', hi: 'उच्च' },
+  },
+};

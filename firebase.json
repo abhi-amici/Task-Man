@@ -1,0 +1,25 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      "**/node_modules/**",
+      "services/mockApi.ts",
+      "services/mockData.ts",
+      "components/common/Logo.tsx"
+    ],
+    "appAssociation": "AUTO",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "run": [ {
+      "cmd": "npm install && export",
+      "env": "API_KEY=\"${secret:GEMINI_API_KEY}\"",
+      "dir": "."
+    } ]
+  }
+}
