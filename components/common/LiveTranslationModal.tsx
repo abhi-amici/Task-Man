@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-// FIX: Removed `LiveSession` as it is not an exported member of '@google/genai'.
-import type { LiveServerMessage } from '@google/genai';
+// FIX: Removed `LiveSession` as it is not an exported member of the module.
+// The type is now inferred dynamically below.
+import type { LiveServerMessage } from 'google-genai';
 import { LiveTranslateIcon } from './Icons';
 
 // Define a type for the AI client instance dynamically
-type GoogleGenAIClient = InstanceType<(typeof import('@google/genai'))['GoogleGenAI']>;
+type GoogleGenAIClient = InstanceType<(typeof import('google-genai'))['GoogleGenAI']>;
 // FIX: Inferred `LiveSession` type from the SDK to replace the non-exported type.
 type LiveSession = Awaited<ReturnType<GoogleGenAIClient['live']['connect']>>;
 
@@ -122,7 +123,7 @@ const LiveTranslationModal: React.FC<LiveTranslationModalProps> = ({ isOpen, onC
                 return;
             }
 
-            const { GoogleGenAI, Modality } = await import('@google/genai');
+            const { GoogleGenAI, Modality } = await import('google-genai');
             const ai = new GoogleGenAI({ apiKey });
 
             const stream = await navigator.mediaDevices.getUserMedia({ audio: true });

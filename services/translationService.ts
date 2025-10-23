@@ -2,7 +2,7 @@ import { Language } from '../types';
 
 // Define a type for the AI client instance dynamically to avoid a top-level static import.
 // This allows for type safety without triggering the import on module load.
-type GoogleGenAIClient = InstanceType<(typeof import('@google/genai'))['GoogleGenAI']>;
+type GoogleGenAIClient = InstanceType<(typeof import('google-genai'))['GoogleGenAI']>;
 type GenAIClientPromise = Promise<GoogleGenAIClient | null>;
 
 let aiClientPromise: GenAIClientPromise | null = null;
@@ -23,7 +23,7 @@ const initializeAiClient = async (): Promise<GoogleGenAIClient | null> => {
     try {
         // Dynamically import the module ONLY when needed. This is the key fix.
         // It prevents any top-level code in the @google/genai module from breaking the app on initial load.
-        const { GoogleGenAI } = await import('@google/genai');
+        const { GoogleGenAI } = await import('google-genai');
         const ai = new GoogleGenAI({ apiKey });
         return ai;
     } catch (error) {
